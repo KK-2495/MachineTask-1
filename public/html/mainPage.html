@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a user</title>
+    <link rel="stylesheet" href="/css/mainpage.css" type="text/css"/>
+</head>
+<body>
+    <div class="main">
+        <h2>You can Create a User and update here</h2>
+        <div>
+            <button onclick="adduser()">Add a User</button>
+            <button>Update User information</button>
+            <button>Delete a User</button>
+        </div>
+    </div>
+    <script>
+       const adduser = () =>{
+        window.location.href = '/api/v1/adduser';
+       }
+    </script>
+</body>
+</html>
