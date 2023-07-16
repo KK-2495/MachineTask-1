@@ -7,8 +7,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: rgb(183, 108, 108);
     width: 100%;
     height: 100vh;
     flex-direction: column;
 }
+
+.main h2 {
+    font-size: 30px;
+    color: rgb(152, 196, 235);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    top: -25%;
+}
+.main div {
+    /* border: 2px solid black; */
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main div button {
+    padding: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: antiquewhite;
+    font-size: 16px;
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main div button:hover{
+    background-color: whitesmoke;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+

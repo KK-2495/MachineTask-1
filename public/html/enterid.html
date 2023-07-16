@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Id</title>
+    <link rel="stylesheet" href="/css/adduser.css">
+</head>
+<body>
+    <div class="screen">
+        <form action="/api/v1/updateuserinfo" method="get">
+            <label> Please enter Your Id to update :</label>
+            <input type="text" name="id" placeholder="Enter Your Id here" />
+            <!-- <input type="submit" onclick="window.location.href = '/api/v1/updateuserinfo'"/> -->
+            <button onclick="window.location.href = '/api/v1/updateuserinfo'">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
