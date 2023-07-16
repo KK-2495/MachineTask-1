@@ -10,11 +10,11 @@ router.post('/adduser', register);
 router.get('/removeuser', removeUser);
 router.post('/removeuser', deleteUser);
 router.get('/updateuser', userId);
-router.get('/updateuserinfo', updateUserInfo);
+// router.get('/updateuserinfo', updateUserInfo);
 router.post('/updateuserinfo', checkId,  updateUserInfo);
-router.get('/updateusername',updateUserName);
+router.get('/updateusername', updateUserName);
 
-router.get('/checkid', checkId);
+router.post('/checkid', checkId);
 
 
 

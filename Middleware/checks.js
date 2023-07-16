@@ -1,12 +1,24 @@
 import Users from "../Models/user.js";
+import fs from "fs";
+import path from "path";
+
+const __dirname = path.resolve();
 
 export const checkId = async (req,res,next) =>{
     try {
         const{id} = req.body;
         const response = await Users.findOne({_id:id}).exec();
-        if(!response) return res.send("Check Your Id");
-        // return res.send(response);
-        next();
+        if(!response) return res.json({"status" : 400, "message" : "ID not found."});
+        let userId = response._id;
+        fs.writeFile(__dirname + "../TempUserData/tempObject", response, (err)=>{
+            if(err){
+                return res.send(err);
+            }else{
+                console.log("File saved.");
+            }
+        });
+
+        return res.send("complete");
     } catch (error) {
         return res.send(error);
     }
